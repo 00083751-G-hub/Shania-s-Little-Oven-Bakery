@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register for a free membership at Shania's Little Oven Bakery. Enjoy exclusive discounts, rewards, and special offers.">
+    <meta name="keywords" content="bakery registration, member signup, bakery membership, rewards program">
+    <title>Register | Shania's Little Oven Bakery</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <div class="header-content">
+		
+			<!-- Logo image source: Pixabay by Riad Aliyev - https://pixabay.com/vectors/ai-generated-bakery-logo-design-9426385/
+				 Free for commercial use -->
+            <div class="logo">
+			<img src="../img/bakery_logo.png" alt="Shania's Little Oven Bakery Logo">
+			<span>Shania's Little Oven Bakery</span>
+		</div>
+            <!-- Navigation built with unordered list and CSS as required -->
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="custom-orders.html">Custom Orders</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="register.html" class="active">Register</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="section">
+            <div class="container">
+                <h1 class="text-center">Join Our Community</h1>
+                <p class="text-center">
+                    Register for a free membership and enjoy exclusive benefits including member pricing, rewards points, birthday treats, and early access to new products.
+                </p>
+            </div>
+        </section>
+
+        <!-- Member Benefits Section -->
+        <section class="section-alt">
+            <div class="container">
+                <h2 class="text-center">Member Benefits</h2>
+                <div class="grid-3 mt-40">
+                    <div class="card text-center">
+                        <h3>Exclusive Discounts</h3>
+                        <p>Enjoy member-only pricing on select products and receive special promotional offers throughout the year.</p>
+                    </div>
+
+                    <div class="card text-center">
+                        <h3>Rewards Points</h3>
+                        <p>Earn points with every purchase that can be redeemed for free products and special discounts.</p>
+                    </div>
+
+                    <div class="card text-center">
+                        <h3>Birthday Treats</h3>
+                        <p>Receive a complimentary birthday treat during your birthday month as our gift to you.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration Form Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="text-center">Create Your Account</h2>
+                
+                <!-- Registration Form with Fieldsets and Legends as required -->
+                <form id="registration-form" action="response.html" method="post">
+                    <!-- Personal Information Fieldset -->
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        
+                        <label for="first-name">First Name *</label>
+                        <input type="text" id="first-name" name="first-name" required>
+
+                        <label for="last-name">Last Name *</label>
+                        <input type="text" id="last-name" name="last-name" required>
+
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(868) 555-1234" required>
+
+                        <label for="birth-date">Date of Birth (for birthday rewards)</label>
+                        <input type="date" id="birth-date" name="birth-date">
+                    </fieldset>
+
+                    <!-- Account Information Fieldset -->
+                    <fieldset>
+                        <legend>Account Information</legend>
+                        
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+
+                        <label for="username">Username *</label>
+                        <input type="text" id="username" name="username" placeholder="Choose a unique username" required>
+
+                        <label for="password">Password *</label>
+                        <input type="password" id="password" name="password" placeholder="Minimum 8 characters" required>
+
+                        <label for="confirm-password">Confirm Password *</label>
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter your password" required>
+                    </fieldset>
+
+                    <!-- Preferences Fieldset -->
+                    <fieldset>
+                        <legend>Preferences and Interests</legend>
+                        
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter" checked>
+                            <label for="newsletter">Subscribe to our newsletter for exclusive offers and updates</label>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="sms-alerts" name="sms-alerts">
+                            <label for="sms-alerts">Receive SMS alerts for special promotions</label>
+                        </div>
+
+                        <label>Favorite Product Categories (select all that apply):</label>
+                        
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="breads" name="category-breads">
+                            <label for="breads">Homemade Breads</label>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="cakes" name="category-cakes">
+                            <label for="cakes">Cakes and Celebration Items</label>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="pastries" name="category-pastries">
+                            <label for="pastries">Pastries and Sweet Treats</label>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="cookies" name="category-cookies">
+                            <label for="cookies">Cookies and Brownies</label>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="specialty" name="category-specialty">
+                            <label for="specialty">Specialty and Seasonal Items</label>
+                        </div>
+                    </fieldset>
+
+                    <!-- Terms and Conditions -->
+                    <fieldset>
+                        <legend>Terms and Conditions</legend>
+                        
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">I agree to the Terms of Service and Privacy Policy *</label>
+                        </div>
+
+                        <p>When you register, you agree to get updates from Shania’s Little Oven Bakery. Your details stay private and will not be shared. You can unsubscribe from emails whenever you like.</p>
+                    </fieldset>
+
+                    <!-- Form Buttons -->
+                    <div class="form-buttons">
+                        <button type="reset" class="btn btn-secondary">Clear Form</button>
+                        <button type="submit" class="btn btn-primary">Register</button>
+                    </div>
+					
+                </form>
+
+                <p class="text-center">
+                    Already have an account? <a href="login.html">Log in here</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>#15 2nd Branch Mantacool Road, George Village</p>
+                <p>Tableland, Trinidad and Tobago</p>
+                <p>Phone: (868) 737-OVEN</p>
+                <p>Email: info@shaniaslittleoven.com</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="custom-orders.html">Custom Orders</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+					<li><a href="register.html">Register</a></li>
+					<li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Hours of Operation</h3>
+                <p>Monday - Friday: 7:00 AM - 7:00 PM</p>
+                <p>Saturday: 8:00 AM - 5:00 PM</p>
+                <p>Sunday: 8:00 AM - 12:00 PM</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Shania’s Little Oven Bakery | Designed by Shania Katwaroo</p>
+        </div>
+    </footer>
+</body>
+</html>
